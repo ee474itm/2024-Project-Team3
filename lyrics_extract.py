@@ -12,7 +12,7 @@ import argparse
 import time
 import hmac
 import openai
-openai.api_key = "sk-proj-vqb31qtd0Duat0wT1rSmT3BlbkFJTo7L3VYeryvQNaMd5mmP"
+openai.api_key = "your_api_key"
 FILE_LIST = []
 track_artistid = []
 track_albumid = []
