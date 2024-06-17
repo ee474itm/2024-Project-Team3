@@ -4,7 +4,7 @@ import random
 import os
 import argparse
 
-openai.api_key = 'your-api-key'
+openai.api_key = 'your_api_key'
 
 system_prompt = f"""You are a lyricist and translator who translates lyrics.
 You must translate the lyrics of the {{original}} song provided to {{translated}}.
@@ -16,7 +16,7 @@ Third, to make english lyrics similar to korean, find English words that have si
 Finally, using interpreted overall meaning and found key word, make english lyrics
 You SHOULD output final lyrics after ##Final lyrics## form"""
 
-def get_response(language, input_path, example_num=3, model_name='gpt-4o'):
+def get_response(language, input_path, example_num=5, model_name='gpt-4o'):
     if os.path.exists(input_path):
         with open(input_path, 'r', encoding='utf-8') as f:
             lyrics = f.read()
